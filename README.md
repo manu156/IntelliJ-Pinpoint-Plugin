@@ -1,6 +1,7 @@
 # Intellij-pinpoint-plugin
 
-[video.webm](https://github.com/manu156/Intellij-pinpoint-plugin/assets/10695678/40a4dbf7-81a4-4e42-9e10-689b9f24c969)
+
+[deom-video.webm](https://github.com/manu156/Intellij-pinpoint-plugin/assets/10695678/8e41b39f-7b71-4dcb-b7bd-48a83d4a41cb)
 
 
 ![Build](https://github.com/manu156/Intellij-pinpoint-plugin/workflows/Build/badge.svg)
