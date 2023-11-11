@@ -16,8 +16,8 @@ Supercharge your development/debug workflow.
 </ul>
 
 ![Build](https://github.com/manu156/Intellij-pinpoint-plugin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/23042-pinpoint-integration.svg)](https://plugins.jetbrains.com/plugin/23042-pinpoint-integration)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/23042-pinpoint-integration.svg)](https://plugins.jetbrains.com/plugin/23042-pinpoint-integration)
 
 ![](https://github.com/manu156/Intellij-pinpoint-plugin/assets/10695678/64d7138e-817e-4108-a0f8-aa2e83ed05e5)
 
