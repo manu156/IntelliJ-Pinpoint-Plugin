@@ -7,7 +7,7 @@ plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.9.20"
     id("org.jetbrains.intellij") version "1.16.0"
-    id("org.jetbrains.qodana") version "0.1.13"
+    id("org.jetbrains.qodana") versi	on "0.1.13"
     id("org.jetbrains.changelog") version "2.2.0"
     id("org.jetbrains.kotlinx.kover") version "0.7.4"
 }
@@ -16,9 +16,10 @@ val sinceBuildPluginXml: String by project
 val untilBuildPluginXml: String by project
 val ideaVersion: String by project
 val targetIdePlatform: String by project
+val pluginVersion: String by project
 
 group = "com.github.manu156"
-version = "0.9.3-$ideaVersion-$targetIdePlatform"
+version = "$pluginVersion-$ideaVersion-$targetIdePlatform"
 
 repositories {
     mavenCentral()
@@ -52,7 +53,7 @@ qodana {
 
 // Configure Gradle Changelog Plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
 changelog {
-    version.set(properties("pluginVersion"))
+    version.set("$pluginVersion")
     groups.empty()
     repositoryUrl.set(properties("pluginRepositoryUrl"))
 }
@@ -76,12 +77,6 @@ tasks {
         kotlinOptions.jvmTarget = "17"
     }
 
-    withType<Test> {
-        useJUnitPlatform()
-        testLogging {
-            events("passed", "skipped", "failed")
-        }
-    }
 
     patchPluginXml {
         sinceBuild.set(sinceBuildPluginXml)

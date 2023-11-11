@@ -2,6 +2,7 @@ import subprocess
 import sys
 
 source_string = """
+*** DO NOT EDIT THESE LINES. FOLLOWING PROPERTIES ARE SET BY BUILD SCRIPT. see build_script.py
 # Opt-out flag for bundling Kotlin standard library -> https://jb.gg/intellij-platform-kotlin-stdlib
 kotlin.stdlib.default.dependency=false
 # TODO temporary workaround for Kotlin 1.8.20+ (https://jb.gg/intellij-platform-kotlin-oom)
@@ -17,6 +18,7 @@ org.gradle.caching=true
 # please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description
 pluginGroup = com.github.manu156
 pluginName = pinpoint-integration
+pluginVersion=0.9.6
 pluginRepositoryUrl = https://github.com/manu156/Intellij-pinpoint-plugin
 
 """
