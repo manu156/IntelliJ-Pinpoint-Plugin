@@ -17,7 +17,7 @@ Supercharge your development/debug workflow.
 <ul>
     <li><strong>Java/Springboot Compatibility:</strong> Currently, the plugin exclusively supports Java and Springboot applications</li>
     <li><strong>Independence Disclaimer:</strong> Please note that this plugin is an independent project and is not endorsed or officially associated with Pinpoint APM</li>
-</ul>
+</ul> 
 
 ![](https://github.com/manu156/Intellij-pinpoint-plugin/assets/10695678/64d7138e-817e-4108-a0f8-aa2e83ed05e5)
 
