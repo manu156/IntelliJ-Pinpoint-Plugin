@@ -8,6 +8,8 @@ Supercharge your development/debug workflow.
     providing you with real-time insights into the latencies of APIs and methods within your applications.
 <br>
 <br>
+Please use latest version of IDE (as older versions will not recieve plugin updates)
+<br>
 <strong>Key Features</strong><br>
 <ul>
     <li>Select a single point or time range on interactive graph to see requests/transactions on list view with transaction level statistics</li>
