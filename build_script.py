@@ -18,7 +18,7 @@ org.gradle.caching=true
 # please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description
 pluginGroup = com.github.manu156
 pluginName = pinpoint-integration
-pluginVersion=0.9.6
+pluginVersion=0.9.7
 pluginRepositoryUrl = https://github.com/manu156/Intellij-pinpoint-plugin
 
 """
@@ -44,9 +44,21 @@ ic_versions = [
     },
     {
         "targetIdePlatform": "IC",
-        "ideaVersion": "232.7754-EAP-CANDIDATE-SNAPSHOT",
-        "sinceBuildPluginXml": "231",
+        "ideaVersion": "2023.2",
+        "sinceBuildPluginXml": "232",
+        "untilBuildPluginXml": "232.*"
+    },
+    {
+        "targetIdePlatform": "IC",
+        "ideaVersion": "2023.3",
+        "sinceBuildPluginXml": "233",
         "untilBuildPluginXml": "233.*"
+    },
+    {
+        "targetIdePlatform": "IC",
+        "ideaVersion": "2024.1",
+        "sinceBuildPluginXml": "241",
+        "untilBuildPluginXml": "241.*"
     }
 ]
 
@@ -73,7 +85,19 @@ iu_versions = [
         "targetIdePlatform": "IU",
         "ideaVersion": "2023.2",
         "sinceBuildPluginXml": "232",
+        "untilBuildPluginXml": "232.*"
+    },
+    {
+        "targetIdePlatform": "IU",
+        "ideaVersion": "2023.3",
+        "sinceBuildPluginXml": "233",
         "untilBuildPluginXml": "233.*"
+    },
+    {
+        "targetIdePlatform": "IU",
+        "ideaVersion": "2024.1",
+        "sinceBuildPluginXml": "241",
+        "untilBuildPluginXml": "241.*"
     }
 ]
 
@@ -82,6 +106,7 @@ properties_file = "gradle.properties"
 if __name__ == '__main__':
     build_type = sys.argv[1]
     token = sys.argv[2]
+    target_ver = sys.argv[3]
     command = "./gradlew buildPlugin -Dorg.gradle.project.intellijPublishToken=" + token
     if "all" == build_type:
         versions = ic_versions + iu_versions
@@ -91,6 +116,9 @@ if __name__ == '__main__':
         versions = iu_versions
     else:
         exit(255)
+
+    if target_ver is not None:
+        versions = [i for i in versions if i["ideaVersion"] == target_ver]
 
     for ver in versions:
         print("Building for:", ver.get("targetIdePlatform"), ver.get("ideaVersion"))
