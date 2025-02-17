@@ -2,7 +2,10 @@
 ![Build](https://github.com/manu156/Intellij-pinpoint-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/23042-pinpoint-integration.svg)](https://plugins.jetbrains.com/plugin/23042-pinpoint-integration)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/23042-pinpoint-integration.svg)](https://plugins.jetbrains.com/plugin/23042-pinpoint-integration)
-
+<br>
+## UPDATE
+Not maintained anymore
+## About
 Supercharge your development/debug workflow.
     This plugin seamlessly integrates Pinpoint-apm capabilities like method level latency breakdown directly into your code,
     providing you with real-time insights into the latencies of APIs and methods within your applications.
